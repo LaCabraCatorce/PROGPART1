@@ -11,14 +11,14 @@ package com.mycompany.progpart1;
 import java.util.regex.Pattern;
 
 public class Login {
-    
-    
 
 
-/**
- * The Login class handles the logic for user registration and authentication.
- * It includes methods for validation and status reporting.
- */
+
+
+    /**
+     * The Login class handles the logic for user registration and authentication.
+     * It includes methods for validation and status reporting.
+     */
 
 
     private String username;
@@ -76,13 +76,13 @@ public class Login {
         if (!checkUserName(username)) {
             return "Username is not correctly formatted; please ensure that your username contains an underscore and is no more than five characters in length.";
         }
-        
+
         if (!checkPasswordComplexity(password)) {
             return "Password is not correctly formatted; please ensure that the password contains at least eight characters, a capital letter, a number, and a special character.";
         }
 
         if (!checkCellPhoneNumber(cell)) {
-             return "Cell number is incorrectly formatted or does not contain an international code; please correct the number and try again.";
+            return "Cell number is incorrectly formatted or does not contain an international code; please correct the number and try again.";
         }
 
         return "Username successfully captured.\nPassword successfully captured.\nCell number successfully added.";
