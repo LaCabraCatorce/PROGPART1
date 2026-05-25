@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Unit tests based on the POE requirements table.
  */
 public class LoginTest {
-    
+
     Login login = new Login();
 
     @Test
